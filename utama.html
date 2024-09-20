@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HBD</title>
+        <style>
+            body {
+                background: #007aff;
+                margin-top: 200px;
+                margin-left: 50px;
+            }
+            #typing {
+                width: 0ch;
+                color: white;
+                float: left;
+                font-family: sans-serif;
+                font-weight: bold;
+                font-size: 60px;
+                overflow: hidden;
+                white-space: nowrap;
+                animation: typing 5s steps(22) 1s infinite alternate;
+            }
+            #typing span {
+                color: #fb8c00;
+            }
+            #line {
+                float: left;
+                color: white;
+                font-weight: bold;
+                font-size: 60px;
+                animation: crow 0.5s linear 0s infinite;
+            }
+            #button-container {
+                margin-top: 20px;
+            }
+            button {
+                padding: 10px 20px;
+                font-size: 20px;
+                background-color: #fb8c00;
+                color: white;
+                border: none;
+                cursor: pointer;
+                font-weight: bold;
+            }
+            button:hover {
+                background-color: #ffb74d;
+            }
+            @keyframes typing {
+                from {
+                    width: 0ch;
+                }
+                to {
+                    width: 25ch;
+                }
+            }
+            @keyframes crow {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="typing">Selamat Ulang Tahun<span>Sayang</span></div>
+        <div id="line">|</div>
+<br>
+        <div id="button-container">
+            <button onclick="redirect()">KLIK DISINI SAYANG</button>
+        </div>
+
+        <script>
+            function redirect() {
+                window.location.href = "index.html";
+            }
+        </script>
+    </body>
+</html>
