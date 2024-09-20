@@ -1,0 +1,54 @@
+*,
+html{
+    padding: 0;
+    margin:0;
+}
+
+body{
+    background-image: url(wall.jpg);
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.font{
+    font-family: Helvetica;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+.container-ainun{
+    background-color: aqua;
+}
+
+.ainun{
+    width: 180px;
+    height: 300px;
+    margin: 100px;
+    border: 3px solid black;
+    box-shadow: 0 0 10px 5px black;
+}
+
+.column1{
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    font-family: helvetica;
+}
+
+.container-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img{
+    width: 150px;
+    height: 50px;
+    border: 2px solid black;
+}
+
+.img:hover{
+    box-shadow: 0 0 10px 3px red;
+}
